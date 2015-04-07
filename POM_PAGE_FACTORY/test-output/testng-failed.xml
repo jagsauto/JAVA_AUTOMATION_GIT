@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SkyChang First Test Suite]">
+  <listeners>
+    <listener class-name="listener.TestsListenerAdapter"/>
+  </listeners>
+  <test name="Find a Friend Test(failed)">
+    <classes>
+      <class name="com.qtpselenium.testcases.findFriend">
+        <methods>
+          <include name="checkRunMode"/>
+          <include name="findFriend"/>
+        </methods>
+      </class> <!-- com.qtpselenium.testcases.findFriend -->
+      <class name="com.qtpselenium.suntestdata.rough.testngPromo">
+        <methods>
+          <include name="checkRunMode"/>
+        </methods>
+      </class> <!-- com.qtpselenium.suntestdata.rough.testngPromo -->
+      <class name="com.qtpselenium.testcases.LoginTest">
+        <methods>
+          <include name="init"/>
+          <include name="checkRunMode"/>
+        </methods>
+      </class> <!-- com.qtpselenium.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Find a Friend Test(failed) -->
+</suite> <!-- Failed suite [SkyChang First Test Suite] -->

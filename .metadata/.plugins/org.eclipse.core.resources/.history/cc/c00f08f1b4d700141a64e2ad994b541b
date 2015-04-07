@@ -1,0 +1,5 @@
+package test.qtpselenium.salesforce.login;
+
+public class LoginTest {
+
+}

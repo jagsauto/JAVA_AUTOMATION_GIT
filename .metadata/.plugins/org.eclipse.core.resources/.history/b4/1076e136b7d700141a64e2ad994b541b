@@ -1,0 +1,36 @@
+package test.qtpselenium.salesforce.login;
+
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+
+public class LoginTest
+{
+
+	
+	@Given("^I go to \"([^\"]*)\" page$")
+	public void I_Go_To(String sitename)
+	{
+		System.out.println("I go to "+sitename);
+	}
+	
+	@And("^I enter user name as test$")
+	public void I_Enter()
+	{
+		System.out.println("I enter user name as test");
+	}
+	
+	@And("^I click on login button$")
+	public void I_Click()
+	{
+		System.out.println("I click on login button");
+	}
+	
+	@Then("^Login should be successful$")
+	public void Login_Status()
+	{
+		System.out.println("Login should be successful");
+	}
+	
+	
+}

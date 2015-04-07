@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Sample Suite">
+
+
+
+
+<test name="App test">
+    <classes>
+        <class name="com.learntestng.AppTest" ></class>  
+    </classes>
+</test>
+<test name="my test">
+    <classes>
+        <class name="com.learntestng.mytest" ></class>  
+    </classes>
+</test>
+
+
+
+
+</suite>

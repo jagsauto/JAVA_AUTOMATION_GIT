@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="33" started-at="2015-03-19T16:07:26Z" finished-at="2015-03-19T16:07:26Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="33" started-at="2015-03-19T16:07:26Z" finished-at="2015-03-19T16:07:26Z">
+      <class name="com.testing.LoginTest">
+        <test-method status="PASS" signature="LoginsTest()" name="LoginsTest" duration-ms="0" started-at="2015-03-19T16:07:26Z" finished-at="2015-03-19T16:07:26Z">
+        </test-method>
+      </class>
+      <class name="com.testing.AppTest">
+        <test-method status="PASS" signature="SampleTest()" name="SampleTest" duration-ms="19" started-at="2015-03-19T16:07:26Z" finished-at="2015-03-19T16:07:26Z">
+        </test-method>
+      </class>
+      <class name="com.testing.ThirdTest">
+        <test-method status="PASS" signature="LogoutTest()" name="LogoutTest" duration-ms="1" started-at="2015-03-19T16:07:26Z" finished-at="2015-03-19T16:07:26Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

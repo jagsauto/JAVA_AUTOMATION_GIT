@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SkyChang First Test Suite">
+
+<listeners>
+    <listener class-name="listener.TestsListenerAdapter" />
+</listeners>
+
+
+<test name="Login Test">
+    <classes>
+        <class name="com.qtpselenium.testcases.LoginTest" ></class>  
+    </classes>
+</test>
+<test name="Find a Friend Test">
+    <classes>
+        <class name="com.qtpselenium.testcases.findFriend" ></class>  
+    </classes>
+</test>
+<test name="Promo Code">
+    <classes>
+        <class name="com.qtpselenium.suntestdata.rough.testngPromo" ></class>  
+    </classes>
+</test>
+
+</suite>

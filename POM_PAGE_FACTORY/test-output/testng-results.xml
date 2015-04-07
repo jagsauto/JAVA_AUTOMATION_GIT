@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SkyChang First Test Suite" duration-ms="46930" started-at="2015-03-13T15:50:32Z" finished-at="2015-03-13T15:51:19Z">
+    <groups>
+    </groups>
+    <test name="Login Test" duration-ms="8118" started-at="2015-03-13T15:50:32Z" finished-at="2015-03-13T15:50:40Z">
+      <class name="com.qtpselenium.testcases.LoginTest">
+        <test-method status="PASS" signature="checkRunMode()[pri:0, instance:com.qtpselenium.testcases.LoginTest@7006c658]" name="checkRunMode" is-config="true" duration-ms="461" started-at="2015-03-13T15:50:32Z" finished-at="2015-03-13T15:50:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRunMode -->
+        <test-method status="PASS" signature="TestLogin()[pri:0, instance:com.qtpselenium.testcases.LoginTest@7006c658]" name="TestLogin" duration-ms="7650" started-at="2015-03-13T15:50:32Z" finished-at="2015-03-13T15:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+      </class> <!-- com.qtpselenium.testcases.LoginTest -->
+    </test> <!-- Login Test -->
+    <test name="Find a Friend Test" duration-ms="42" started-at="2015-03-13T15:50:40Z" finished-at="2015-03-13T15:50:40Z">
+      <class name="com.qtpselenium.testcases.findFriend">
+        <test-method status="SKIP" signature="checkRunMode()[pri:0, instance:com.qtpselenium.testcases.findFriend@1fbc7afb]" name="checkRunMode" is-config="true" duration-ms="0" started-at="2015-03-13T15:50:40Z" finished-at="2015-03-13T15:50:40Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test
+	at com.qtpselenium.testcases.findFriend.checkRunMode(findFriend.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
+	at org.testng.TestRunner.run(TestRunner.java:609)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRunMode -->
+        <test-method status="SKIP" signature="findFriend()[pri:0, instance:com.qtpselenium.testcases.findFriend@1fbc7afb]" name="findFriend" duration-ms="0" started-at="2015-03-13T15:50:40Z" finished-at="2015-03-13T15:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findFriend -->
+      </class> <!-- com.qtpselenium.testcases.findFriend -->
+    </test> <!-- Find a Friend Test -->
+    <test name="Promo Code" duration-ms="38618" started-at="2015-03-13T15:50:40Z" finished-at="2015-03-13T15:51:19Z">
+      <class name="com.qtpselenium.testcases.LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.qtpselenium.testcases.LoginTest@7006c658]" name="init" is-config="true" duration-ms="4933" started-at="2015-03-13T15:50:27Z" finished-at="2015-03-13T15:50:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+      </class> <!-- com.qtpselenium.testcases.LoginTest -->
+      <class name="com.qtpselenium.suntestdata.rough.testngPromo">
+        <test-method status="PASS" signature="checkRunMode()[pri:0, instance:com.qtpselenium.suntestdata.rough.testngPromo@5ba23b66]" name="checkRunMode" is-config="true" duration-ms="37" started-at="2015-03-13T15:50:40Z" finished-at="2015-03-13T15:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRunMode -->
+        <test-method status="PASS" signature="createPromo()[pri:0, instance:com.qtpselenium.suntestdata.rough.testngPromo@5ba23b66]" name="createPromo" duration-ms="38580" started-at="2015-03-13T15:50:40Z" finished-at="2015-03-13T15:51:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPromo -->
+      </class> <!-- com.qtpselenium.suntestdata.rough.testngPromo -->
+    </test> <!-- Promo Code -->
+  </suite> <!-- SkyChang First Test Suite -->
+</testng-results>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="L109372" name="com.testing.AppTest" tests="3" failures="0" timestamp="19 Mar 2015 16:07:26 GMT" time="0.033" errors="0">
+  <testcase name="SampleTest" time="0.019" classname="com.testing.AppTest"/>
+  <testcase name="LoginsTest" time="0.0" classname="com.testing.LoginTest"/>
+  <testcase name="LogoutTest" time="0.001" classname="com.testing.ThirdTest"/>
+</testsuite>

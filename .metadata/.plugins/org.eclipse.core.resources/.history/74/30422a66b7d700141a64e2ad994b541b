@@ -1,0 +1,7 @@
+Feature: Salesforce login
+
+Scenario: Login to salesforce
+Given I go to "http://salesforce.com" page
+And I enter user name as test
+And I click on login button
+Then Login should be successful

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;acqStep1PersonalInfo.java&apos; to &apos;POM_PAGE_FACTORY/src/com.qtpselenium.suntestdata.pages&apos;&#x0D;&#x0A;- Original project: &apos;POM_PAGE_FACTORY&apos;&#x0D;&#x0A;- Destination element: &apos;POM_PAGE_FACTORY/src/com.qtpselenium.suntestdata.pages&apos;&#x0D;&#x0A;- Original element: &apos;com.qtpselenium.suntestdata.rough.acqStep1PersonalInfo.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;com.qtpselenium.suntestdata.pages" element1="/src&lt;com.qtpselenium.suntestdata.rough{acqStep1PersonalInfo.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1425491356164" units="1" version="1.0"/>
+</session>

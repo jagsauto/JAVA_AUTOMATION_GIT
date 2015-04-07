@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;testRunner.java&apos; to &apos;Salesforce-Project/src/test/java/test.qtpselenium.salesforce&apos;&#x0D;&#x0A;- Original project: &apos;Cucumber_Basic&apos;&#x0D;&#x0A;- Destination element: &apos;Salesforce-Project/src/test/java/test.qtpselenium.salesforce&apos;&#x0D;&#x0A;- Original element: &apos;com.learning.cucumber.testRunner.java&apos;" description="Copy compilation unit" destination="=Salesforce-Project/src\/test\/java&lt;test.qtpselenium.salesforce" element1="/src&lt;com.learning.cucumber{testRunner.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1427813530221" units="1" version="1.0"/>
+</session>
