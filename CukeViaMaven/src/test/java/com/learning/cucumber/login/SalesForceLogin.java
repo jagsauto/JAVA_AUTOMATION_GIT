@@ -9,7 +9,7 @@ import cucumber.api.java.en.Then;
 public class SalesForceLogin 
 {
 	
-	WebConnector Selenium = new WebConnector();
+	WebConnector Selenium = WebConnector.getInstance();
 	@Given("^I open \"([^\"]*)\" on \"([^\"]*)\"$")
 	public void I_Go_To(String sitename, String browserName)
 	{
@@ -22,21 +22,21 @@ public class SalesForceLogin
 	public void I_Enter(String username, String uName)
 	{
 		System.out.println(" I enter "+username+" as "+uName);
-		//Selenium.type(username, uName);
+		Selenium.type(username, uName);
 	}
 	@And("^I click on \"([^\"]*)\"$")
 	public void I_click_on_LoginButton(String loginButton)
 	{
 		System.out.println(" I click on "+loginButton);
-		//Selenium.click(loginButton);
+		Selenium.click(loginButton);
 	}
 	
 	@Then("^Login should be \"([^\"]*)\"$")
 	public void Login_Statu(String status)
 	{
 		System.out.println(" Login should be "+status);
-		//String actualResult=null;
-	/*	Boolean value = Selenium.isElementPresent("Username");
+		String actualResult=null;
+	Boolean value = Selenium.isElementPresent("sunMenuLink");
 		if(value)
 		{
 			actualResult="Successful";
@@ -44,8 +44,8 @@ public class SalesForceLogin
 			actualResult="Failure";
 		System.out.println("Value of logged in function is : "+ actualResult);
 		//Assert.assertEquals(status, actualResult);
-		 * 
-		 */
+		 
+	
 	}
 	
 

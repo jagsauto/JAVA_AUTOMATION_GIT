@@ -7,43 +7,43 @@ formatter.feature({
   "line": 1
 });
 formatter.scenario({
-  "id": "salesforce-login;user-should-be-able-to-login",
+  "id": "salesforce-login;user-should-be-able-to-login-to-uat-thesun.co.uk",
   "tags": [
     {
       "name": "@Bokka",
-      "line": 4
+      "line": 17
     }
   ],
   "description": "",
-  "name": "User should be able to login",
+  "name": "User should be able to login to UAT thesun.co.uk",
   "keyword": "Scenario",
-  "line": 5,
+  "line": 18,
   "type": "scenario"
 });
 formatter.step({
   "name": "I open \"loginUrl\" on \"Mozilla\"",
   "keyword": "Given ",
-  "line": 6
+  "line": 19
 });
 formatter.step({
-  "name": "I enter \"LoginUserName\" as \"testuser\"",
+  "name": "I enter \"loginEmailAddress\" as \"sunil.yadav+uat@news.co.uk\"",
   "keyword": "And ",
-  "line": 7
+  "line": 20
 });
 formatter.step({
-  "name": "I enter \"LoginPassword\" as \"testpwd\"",
+  "name": "I enter \"loginPassword\" as \"Password123\"",
   "keyword": "And ",
-  "line": 8
+  "line": 21
 });
 formatter.step({
-  "name": "I click on \"LoginButton\"",
+  "name": "I click on \"loginSignInButton\"",
   "keyword": "And ",
-  "line": 9
+  "line": 22
 });
 formatter.step({
   "name": "Login should be \"Successful\"",
   "keyword": "Then ",
-  "line": 10
+  "line": 23
 });
 formatter.match({
   "arguments": [
@@ -59,54 +59,54 @@ formatter.match({
   "location": "SalesForceLogin.I_Go_To(String,String)"
 });
 formatter.result({
-  "duration": 10586907161,
+  "duration": 6667524108,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "LoginUserName",
+      "val": "loginEmailAddress",
       "offset": 9
     },
     {
-      "val": "testuser",
+      "val": "sunil.yadav+uat@news.co.uk",
+      "offset": 32
+    }
+  ],
+  "location": "SalesForceLogin.I_Enter(String,String)"
+});
+formatter.result({
+  "duration": 452985250,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "loginPassword",
+      "offset": 9
+    },
+    {
+      "val": "Password123",
       "offset": 28
     }
   ],
   "location": "SalesForceLogin.I_Enter(String,String)"
 });
 formatter.result({
-  "duration": 197461,
+  "duration": 238689008,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "LoginPassword",
-      "offset": 9
-    },
-    {
-      "val": "testpwd",
-      "offset": 28
-    }
-  ],
-  "location": "SalesForceLogin.I_Enter(String,String)"
-});
-formatter.result({
-  "duration": 161335,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "LoginButton",
+      "val": "loginSignInButton",
       "offset": 12
     }
   ],
   "location": "SalesForceLogin.I_click_on_LoginButton(String)"
 });
 formatter.result({
-  "duration": 133009,
+  "duration": 3902612434,
   "status": "passed"
 });
 formatter.match({
@@ -119,127 +119,7 @@ formatter.match({
   "location": "SalesForceLogin.Login_Statu(String)"
 });
 formatter.result({
-  "duration": 123567,
-  "status": "passed"
-});
-formatter.scenario({
-  "id": "salesforce-login;user-should-be-able-to-login",
-  "tags": [
-    {
-      "name": "@Bokka1",
-      "line": 12
-    },
-    {
-      "name": "@Bokka",
-      "line": 12
-    }
-  ],
-  "description": "",
-  "name": "User should be able to login",
-  "keyword": "Scenario",
-  "line": 13,
-  "type": "scenario"
-});
-formatter.step({
-  "name": "I open \"loginUrl\" on \"Mozilla\"",
-  "keyword": "Given ",
-  "line": 14
-});
-formatter.step({
-  "name": "I enter \"LoginUserName\" as \"testuser\"",
-  "keyword": "And ",
-  "line": 15
-});
-formatter.step({
-  "name": "I enter \"LoginPassword\" as \"testpwd\"",
-  "keyword": "And ",
-  "line": 16
-});
-formatter.step({
-  "name": "I click on \"LoginButton\"",
-  "keyword": "And ",
-  "line": 17
-});
-formatter.step({
-  "name": "Login should be \"Successful\"",
-  "keyword": "Then ",
-  "line": 18
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "loginUrl",
-      "offset": 8
-    },
-    {
-      "val": "Mozilla",
-      "offset": 22
-    }
-  ],
-  "location": "SalesForceLogin.I_Go_To(String,String)"
-});
-formatter.result({
-  "duration": 9158514602,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "LoginUserName",
-      "offset": 9
-    },
-    {
-      "val": "testuser",
-      "offset": 28
-    }
-  ],
-  "location": "SalesForceLogin.I_Enter(String,String)"
-});
-formatter.result({
-  "duration": 176934,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "LoginPassword",
-      "offset": 9
-    },
-    {
-      "val": "testpwd",
-      "offset": 28
-    }
-  ],
-  "location": "SalesForceLogin.I_Enter(String,String)"
-});
-formatter.result({
-  "duration": 106325,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "LoginButton",
-      "offset": 12
-    }
-  ],
-  "location": "SalesForceLogin.I_click_on_LoginButton(String)"
-});
-formatter.result({
-  "duration": 77178,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Successful",
-      "offset": 17
-    }
-  ],
-  "location": "SalesForceLogin.Login_Statu(String)"
-});
-formatter.result({
-  "duration": 123157,
+  "duration": 762194844,
   "status": "passed"
 });
 });
