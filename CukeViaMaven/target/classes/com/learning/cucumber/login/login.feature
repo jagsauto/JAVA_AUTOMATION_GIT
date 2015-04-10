@@ -14,7 +14,7 @@ Examples:
  | Mozilla       | Test     | Tester       |
  | Mozilla       | Dev      | Developer    |
 
-@Bokka
+@Bokka6
 Scenario: User should be able to login to UAT thesun.co.uk
 Given I open "loginUrl" on "Mozilla"
 And I enter "loginEmailAddress" as "sunil.yadav+uat@news.co.uk"
