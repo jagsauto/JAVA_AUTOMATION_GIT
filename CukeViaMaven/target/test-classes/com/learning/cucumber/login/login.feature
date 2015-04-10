@@ -1,7 +1,7 @@
 Feature: salesforce login
 
 
-@Bokka
+@Bokka2
 Scenario: User should be able to login
 Given I open "loginUrl" on "Mozilla"
 And I enter "LoginUserName" as "testuser"
