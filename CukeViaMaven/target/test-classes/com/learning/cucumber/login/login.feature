@@ -1,3 +1,4 @@
+
 Feature: salesforce login
 
 
@@ -21,5 +22,3 @@ And I enter "loginEmailAddress" as "sunil.yadav+uat@news.co.uk"
 And I enter "loginPassword" as "Password123"
 And I click on "loginSignInButton"
 Then Login should be "Successful"
-
-

@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,6 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WebConnector
 {
+	Logger APPLICATION_LOGS = Logger.getLogger("devpinoyLogger");
 	public Properties OR =null;
 	public Properties CONFIG =null;
 	public WebDriver driver = null;
@@ -34,7 +36,7 @@ public class WebConnector
 				
 				//init CONFIG to corresponding env
 				CONFIG= new Properties();
-				System.out.println("Config path: "+ System.getProperty("user.dir")+"\\src\\test\\java\\com\\learning\\cucumber\\config\\"+OR.getProperty("TestEnv")+"_Config.properties");
+				//System.out.println("Config path: "+ System.getProperty("user.dir")+"\\src\\test\\java\\com\\learning\\cucumber\\config\\"+OR.getProperty("TestEnv")+"_Config.properties");
 				
 				fs = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\com\\learning\\cucumber\\config\\"+OR.getProperty("TestEnv")+"_Config.properties");
 				CONFIG.load(fs);
@@ -138,8 +140,49 @@ public class WebConnector
 		
 	}
 	
+	public void log(String msg)
+	{
+		APPLICATION_LOGS.debug(msg);
+	}
+		
+	//**************************** Application dependent Function******************************************
 	
-	
-	
+	public boolean isLoggedIn() // to check whether user is logged in or not
+	{
+		try
+		{
+			// we are taking config .get prop so that we can read the value from the properties file
 
+			if(driver.findElements(By.xpath(OR.getProperty("sunMenuLink"))).size()!=0)
+				return true;
+			else return false;
+		}catch(Throwable t)
+		{
+			System.out.println(" User is not logged in ");
+			return false;
+		}
+	}
+	
+	public void defaultLogin()
+	{
+		try
+		{
+		type("LoginUserName", CONFIG.getProperty("DefaultAdminUsername"));
+		type("LoginPassword", CONFIG.getProperty("DefaultAdminpassword"));
+		click("loginSignInButton");
+		}catch(Exception e)
+		{
+			System.out.println("Error occured while doing default login");
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

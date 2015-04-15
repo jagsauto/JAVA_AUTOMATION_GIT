@@ -24,12 +24,12 @@ public class SalesForceLogin
 		System.out.println(" I enter "+username+" as "+uName);
 		Selenium.type(username, uName);
 	}
-	@And("^I click on \"([^\"]*)\"$")
-	public void I_click_on_LoginButton(String loginButton)
+	/*@And("^I click on \"([^\"]*)\"$")
+	public void I_click_On(String object)
 	{
-		System.out.println(" I click on "+loginButton);
-		Selenium.click(loginButton);
-	}
+		System.out.println(" I click on "+object);
+		Selenium.click(object);
+	}*/
 	
 	@Then("^Login should be \"([^\"]*)\"$")
 	public void Login_Statu(String status)

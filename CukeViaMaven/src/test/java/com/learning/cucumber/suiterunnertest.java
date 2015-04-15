@@ -1,4 +1,4 @@
-package com.learning.cucumber.login;
+package com.learning.cucumber;
 
 import org.junit.runner.RunWith;
 
